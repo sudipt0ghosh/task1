@@ -1,0 +1,12 @@
+
+# node module dir
+/node_modules
+/nbproject
+.idea/
+# package-lock.json is not needed
+package-lock.json
+
+#credentials
+/credentials
+/nbproject/private/
+/temp

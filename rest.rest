@@ -1,0 +1,44 @@
+@url = http://localhost:4001/api/
+
+GET {{url}}/allData
+
+###
+GET {{url}}/allDataByName?name=yafsana
+
+###
+GET {{url}}/passfail?mark=75
+
+
+###
+POST {{url}}/register
+Content-Type: application/json
+
+{
+    "username":"sghosh",
+    "password":"abcd"
+}
+
+
+###
+POST {{url}}/login
+Content-Type: application/json
+
+{
+    "username":"sghosh",
+    "password":"abcd"
+}
+
+###
+GET {{url}}/all
+
+###
+POST {{url}}/add-employee-data
+Content-Type: application/json
+
+{
+   "parent_id": 3,
+    "management_roll": "Employee heiring Team"
+}
+
+###
+GET {{url}}/management-tree?management_roll=Project_manager

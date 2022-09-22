@@ -1,0 +1,105 @@
+-----------------------------------------1st task--------------------------------------
+
+user table{
+id:
+name:
+email:
+}
+
+user subject table{
+id:
+subject name:
+
+}
+
+users marks table{
+id:
+user id:
+subject id:
+marks:
+}
+
+#1. list of all users including it's subj details and marks
+#2. pass name filter the list username
+#3. pass mark>30 from sunject table, show ?pass and ?fail 
+
+let result = marks>30 ? pass : fail
+
+1) no API => user-> hasmany -> marks -> belongsTo -> subject
+
+user{
+    name:"
+    roll:
+    subject{
+        subjname:
+        marks{
+
+        }
+    }
+}
+
+------------------------------------------2nd task---------------------------------------
+
+Task 2:
+1. asc name orderby name and pagination per page 5 data{
+
+	if per page send no data then show all data
+	2 input for api : 1 is how many data we want, and 2nd is in which page data we want.
+}
+
+--------------------------------------------task3----------------------------------------
+
+bareer token in header 
+
+--------------------------------------------task4---------------------------------------
+
+single mamagement table:{
+    id:
+    parent_id:
+    mamagement_role:
+    
+}
+
+data entry-
+id      parent_id   mamagement_role
+---------------------------------------
+1       0           CEO
+2       1           Project_manager
+3       1           HR manager
+4       2           Backend Developer
+5       2           Frontend Developer
+6       3           Marketing Team
+7       3           Employee heiring Team
+
+let data = select id from emp where mr = req.body ;
+let child = select mr from emp where data in (select pid,mr from emp where pid = data)
+
+api- input(managemet_roll)
+     output(relative roll)
+select 
+
+bulkcreate
+[
+{
+    "parent_id": 0,
+    "management_roll": "CEO"
+},{
+    "parent_id": 1,
+    "management_roll": "Project_manager"
+},{
+    "parent_id": 1,
+    "management_roll": "HR manager"
+},{
+    "parent_id": 2,
+    "management_roll": "Backend Developer"
+},{
+    "parent_id": 2,
+    "management_roll": "Frontend Developer"
+},{
+    "parent_id": 3,
+    "management_roll": "Marketing Team"
+},{
+    "parent_id": 3,
+    "management_roll": "Employee heiring Team"
+}
+]

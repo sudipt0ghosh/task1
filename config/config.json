@@ -1,0 +1,30 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Abcd.1234",
+    "database": "task1",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false,
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "root",
+    "password": "Abcd.1234",
+    "database": "task1",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false,
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "root",
+    "password": "Abcd.1234",
+    "database": "task1",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false,
+    "operatorsAliases": false
+    
+  }
+}

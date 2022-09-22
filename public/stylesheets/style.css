@@ -1,0 +1,14 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+footer {
+  background: linear-gradient(to right, #bf3abc 10%, #8b26d5 100%);
+  position: relative;
+  padding: 45px 0px 0px 0px;
+}
