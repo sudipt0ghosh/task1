@@ -10,3 +10,5 @@ package-lock.json
 /credentials
 /nbproject/private/
 /temp
+
+.zip
