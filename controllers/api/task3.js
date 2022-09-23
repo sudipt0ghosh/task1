@@ -63,6 +63,9 @@ exports.login = async function (req, res) {
             console.log("wrong password");
             res.send("wrong password");
           }
+          if (err) {
+            res.send(err);
+          }
         }
       );
     } catch (err) {
