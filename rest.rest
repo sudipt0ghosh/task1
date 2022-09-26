@@ -42,3 +42,7 @@ Content-Type: application/json
 
 ###
 GET {{url}}/management-tree?management_roll=Project_manager
+
+//pagination
+###
+GET {{url}}/list
